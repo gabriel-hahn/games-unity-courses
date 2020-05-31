@@ -11,6 +11,9 @@ enum Screen
 
 public class Hacker : MonoBehaviour
 {
+    string[] levelOnePasswords = { "books", "aisle", "self", "password", "font", "borrow" };
+    string[] levelTwoPasswords = { "prisioner", "handcuffs", "holster", "uniform", "arrest" };
+
     int level;
     string password;
     Screen currentScreen = Screen.MainMenu;
@@ -49,16 +52,11 @@ public class Hacker : MonoBehaviour
 
     void RunMainMenu(string input)
     {
-        if (input == "1")
+        bool isValidLevelNumber = (input == "1" || input == "2");
+
+        if (isValidLevelNumber)
         {
-            level = 1;
-            password = "monkey";
-            StartGame();
-        }
-        else if (input == "2")
-        {
-            level = 2;
-            password = "environment";
+            level = int.Parse(input);
             StartGame();
         }
         else if (input == "007")
@@ -86,7 +84,21 @@ public class Hacker : MonoBehaviour
     void StartGame()
     {
         currentScreen = Screen.Password;
-        Terminal.WriteLine("You have chosen level " + level);
+        Terminal.ClearScreen();
+
+        switch(level)
+        {
+            case 1:
+                password = levelOnePasswords[0];
+                break;
+            case 2:
+                password = levelTwoPasswords[2];
+                break;
+            default:
+                Debug.LogError("Invalid level number");
+                break;
+        }
+
         Terminal.WriteLine("Please enter your password: ");
     }
 }
