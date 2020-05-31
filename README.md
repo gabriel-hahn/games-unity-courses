@@ -7,7 +7,7 @@ Repository with all games developed during courses and using Unity as game engin
 A simple project that simulates a terminal to guess the password to access the chosen system. It uses anagrams and basic game state validations.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/kD0iaACeCrAxu8kwGA/source.gif">
+  <img src="https://media.giphy.com/media/kD0iaACeCrAxu8kwGA/giphy.gif">
 </p>
 
 ## Aircraft Boost
