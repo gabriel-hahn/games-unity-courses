@@ -4,23 +4,52 @@ using UnityEngine;
 
 public class Hacker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start() {
-        ShowMainMenu("Hello Gabriel");
+
+    int level;
+
+    void Start()
+    {
+        ShowMainMenu();
     }
 
-    void ShowMainMenu (string greeting) {
+    void ShowMainMenu ()
+    {
         Terminal.ClearScreen();
 
-        Terminal.WriteLine(greeting);
         Terminal.WriteLine("What would you like to hack into?");
         Terminal.WriteLine("Press 1 for the local library");
         Terminal.WriteLine("Press 2 for the police station");
         Terminal.WriteLine("Enter your selection:");
     }
 
-    // Update is called once per frame
-    void Update() {
-        
+    void OnUserInput (string input)
+    {
+        if (input == "menu")
+        {
+            ShowMainMenu();
+        }
+        else if (input == "1")
+        {
+            level = 1;
+            StartGame();
+        }
+        else if (input == "2")
+        {
+            level = 2;
+            StartGame();
+        }
+        else if (input == "007")
+        {
+            Terminal.WriteLine("Please select a level Mr Bond");
+        }
+        else
+        {
+            Terminal.WriteLine("Please choose a valid level");
+        }
+    }
+
+    void StartGame()
+    {
+        Terminal.WriteLine("You have chosen level " + level);
     }
 }
