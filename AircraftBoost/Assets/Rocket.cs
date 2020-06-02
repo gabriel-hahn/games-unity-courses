@@ -29,11 +29,11 @@ public class Rocket : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            rigiBody.AddRelativeForce(Vector3.right);
+            transform.Rotate(Vector3.forward);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            rigiBody.AddRelativeForce(Vector3.left);
+            transform.Rotate(-Vector3.forward);
         }
     }
 }
