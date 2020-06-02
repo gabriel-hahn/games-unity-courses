@@ -25,6 +25,20 @@ public class Rocket : MonoBehaviour
         Rotate();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                break;
+            case "Fuel":
+                break;
+            default:
+                print("Die");
+                break;
+        }
+    }
+
     private void Rotate()
     {
         float rotationThisFrameSpeed = rcsThrust * Time.deltaTime;
