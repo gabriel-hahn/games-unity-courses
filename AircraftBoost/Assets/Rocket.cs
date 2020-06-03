@@ -3,11 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
 {
+    enum State { Alive, Dying, Transcending };
+
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
 
     Rigidbody rigiBody;
     AudioSource audioSource;
+    State state = State.Alive;
 
     // Start is called before the first frame update
     void Start()
@@ -19,23 +22,43 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Thrust();
-        Rotate();
+        if (state == State.Alive)
+        {
+            Thrust();
+            Rotate();
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
+        if (state != State.Alive)
+        {
+            return;
+        }
+
         switch (collision.gameObject.tag)
         {
             case "Friendly":
                 break;
             case "Finish":
-                SceneManager.LoadScene(1);
+                state = State.Transcending;
+                Invoke("LoadNextScene", 1f);
                 break;
             default:
-                SceneManager.LoadScene(0);
+                state = State.Dying;
+                Invoke("HandleRocketDeath", 1f);
                 break;
         }
+    }
+
+    private void HandleRocketDeath()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void Rotate()
