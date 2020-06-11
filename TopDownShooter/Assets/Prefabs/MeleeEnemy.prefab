@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492656903682791}
   - component: {fileID: 797492656903682784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492657545121310}
   - component: {fileID: 797492657545121311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492657548983408}
   - component: {fileID: 797492657548983409}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492657866482735}
   - component: {fileID: 797492657866482728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492658080172546}
   - component: {fileID: 797492658080172547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797492658219364672}
   - component: {fileID: 797492658219364673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,10 +505,10 @@ GameObject:
   m_Component:
   - component: {fileID: 797492658252539793}
   - component: {fileID: 797492658252539794}
-  - component: {fileID: 797492658252539795}
   - component: {fileID: 797492658252539788}
   - component: {fileID: 797492658252539789}
-  m_Layer: 0
+  - component: {fileID: 125923789}
+  m_Layer: 9
   m_Name: MeleeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797492658252539792}
-  m_LocalRotation: {x: -0, y: -0, z: -0.007250486, w: 0.9999737}
+  m_LocalRotation: {x: 0, y: 0, z: -0.007251703, w: 0.9999738}
   m_LocalPosition: {x: 11.74, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -551,19 +551,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &797492658252539795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797492658252539792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ee75a09c15f4ce8a41043dd31bbb7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
 --- !u!61 &797492658252539788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -611,3 +598,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &125923789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797492658252539792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9503406627de4e72a34ceaefe962838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  damage: 1
+  speed: 20
+  timeBetweenAttacks: 3
+  player: {fileID: 0}
+  stopDistance: 10
+  attackSpeed: 6

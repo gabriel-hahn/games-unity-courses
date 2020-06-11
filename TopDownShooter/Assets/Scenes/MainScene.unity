@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 177034718}
   - component: {fileID: 177034717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Arm_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674108862}
   - component: {fileID: 674108861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705622636}
   - component: {fileID: 705622635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Eye_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048678815}
   - component: {fileID: 1048678814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Arm_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444968990}
   - component: {fileID: 1444968989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Leg_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1447719204}
   - component: {fileID: 1447719203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Eye_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1489671352}
   - component: {fileID: 1489671351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Leg_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1190,7 +1190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664827320}
   - component: {fileID: 1664827319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806487929}
   - component: {fileID: 1806487930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,9 +1358,9 @@ GameObject:
   - component: {fileID: 2100654428}
   - component: {fileID: 2100654429}
   - component: {fileID: 2100654430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1416,6 +1416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  health: 5
 --- !u!50 &2100654429
 Rigidbody2D:
   serializedVersion: 4
@@ -1478,12 +1479,12 @@ PrefabInstance:
     - target: {fileID: 797492658252539793, guid: dfef530636b794ce3bb738064148fbeb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.74
+      value: 28.19
       objectReference: {fileID: 0}
     - target: {fileID: 797492658252539793, guid: dfef530636b794ce3bb738064148fbeb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 797492658252539793, guid: dfef530636b794ce3bb738064148fbeb,
         type: 3}
@@ -1539,10 +1540,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2100654426}
     m_Modifications:
+    - target: {fileID: 4686810625441550645, guid: 5ca04b86b1882491ca92ed9030c72333,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686810626174189657, guid: 5ca04b86b1882491ca92ed9030c72333,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686810626471499442, guid: 5ca04b86b1882491ca92ed9030c72333,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4686810626872154040, guid: 5ca04b86b1882491ca92ed9030c72333,
         type: 3}
       propertyPath: m_Name
       value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686810626872154040, guid: 5ca04b86b1882491ca92ed9030c72333,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4686810626872154043, guid: 5ca04b86b1882491ca92ed9030c72333,
         type: 3}
