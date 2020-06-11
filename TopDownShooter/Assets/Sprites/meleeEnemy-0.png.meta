@@ -114,10 +114,10 @@ TextureImporter:
       name: meleeEnemy-0_0
       rect:
         serializedVersion: 2
-        x: 93
+        x: 67
         y: 284
-        width: 576
-        height: 472
+        width: 649
+        height: 525
       alignment: 9
       pivot: {x: 0.52109134, y: 0.027052928}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,7 +182,7 @@ TextureImporter:
         width: 135
         height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

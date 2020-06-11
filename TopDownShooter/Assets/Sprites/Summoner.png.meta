@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 1ce36fd19fc5a4fc9b538d8406354d79
+guid: e2201cb78a3da469c80d8eb0271f2cf0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2311659948842064771
-    second: Player_Head
+      213: -3718250251277295445
+    second: Summoner_0
   - first:
-      213: 7364682651488144517
-    second: Player_Body
+      213: -8140256616438677672
+    second: Summoner_1
   - first:
-      213: -6287787046888575383
-    second: Player_Arm_Left
+      213: -2431688199032919440
+    second: Summoner_2
   - first:
-      213: -1182821291677670348
-    second: Player_Arm_Right
+      213: -7617187978949116469
+    second: Summoner_3
   - first:
-      213: -4709456396536258026
-    second: Player_Eye
+      213: -2683203287380908246
+    second: Summoner_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,106 +114,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Head
+      name: Summoner_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 398
-        width: 749
-        height: 618
+        x: 59
+        y: 540
+        width: 535
+        height: 445
       alignment: 9
-      pivot: {x: 0.50935614, y: 0.038631424}
+      pivot: {x: 0.5205337, y: 0.035072308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7465c336855befd0800000000000000
-      internalID: -2311659948842064771
+      spriteID: ba02c9ab81f166cc0800000000000000
+      internalID: -3718250251277295445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Body
+      name: Summoner_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 68
-        width: 173
-        height: 274
+        x: 649
+        y: 489
+        width: 349
+        height: 445
       alignment: 9
-      pivot: {x: 0.5170087, y: 0.05969776}
+      pivot: {x: 0.1432614, y: 0.15027569}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58cce6d0adb943660800000000000000
-      internalID: 7364682651488144517
+      spriteID: 85f36ac7cbff70f80800000000000000
+      internalID: -8140256616438677672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Arm_Left
+      name: Summoner_2
       rect:
         serializedVersion: 2
-        x: 273
-        y: 79
-        width: 124
-        height: 193
+        x: 211
+        y: 284
+        width: 225
+        height: 141
       alignment: 9
-      pivot: {x: 0.737299, y: 0.85066146}
+      pivot: {x: 0.8254952, y: 0.78567374}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e67e6befa4db8a0800000000000000
-      internalID: -6287787046888575383
+      spriteID: 07a22247778e04ed0800000000000000
+      internalID: -2431688199032919440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Arm_Right
+      name: Summoner_3
       rect:
         serializedVersion: 2
-        x: 423
-        y: 79
-        width: 86
-        height: 193
+        x: 237
+        y: 71
+        width: 144
+        height: 158
       alignment: 9
-      pivot: {x: 0.5, y: 0.7896769}
+      pivot: {x: 0.4745708, y: 0.83605283}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 434a8c45d46c59fe0800000000000000
-      internalID: -1182821291677670348
+      spriteID: bcdbc5704ef4a4690800000000000000
+      internalID: -7617187978949116469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Eye
+      name: Summoner_4
       rect:
         serializedVersion: 2
-        x: 573
-        y: 67
-        width: 271
-        height: 297
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 579
+        y: 84
+        width: 412
+        height: 356
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.8874099}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612e34feb56a4aeb0800000000000000
-      internalID: -4709456396536258026
+      spriteID: a27208b83d853cad0800000000000000
+      internalID: -2683203287380908246
       vertices: []
       indices: 
       edges: []
