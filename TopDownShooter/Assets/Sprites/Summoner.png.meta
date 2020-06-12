@@ -117,12 +117,12 @@ TextureImporter:
       name: Summoner_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 540
-        width: 535
-        height: 445
+        x: 30
+        y: 460
+        width: 641
+        height: 545
       alignment: 9
-      pivot: {x: 0.5205337, y: 0.035072308}
+      pivot: {x: 0.4748324, y: 0.17281047}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,12 +138,12 @@ TextureImporter:
       name: Summoner_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 489
-        width: 349
-        height: 445
+        x: 617
+        y: 460
+        width: 418
+        height: 498
       alignment: 9
-      pivot: {x: 0.1432614, y: 0.15027569}
+      pivot: {x: 0.20020364, y: 0.19807048}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,10 +201,10 @@ TextureImporter:
       name: Summoner_4
       rect:
         serializedVersion: 2
-        x: 579
-        y: 84
-        width: 412
-        height: 356
+        x: 548
+        y: 67
+        width: 470
+        height: 392
       alignment: 9
       pivot: {x: 0.5000002, y: 0.8874099}
       border: {x: 0, y: 0, z: 0, w: 0}
