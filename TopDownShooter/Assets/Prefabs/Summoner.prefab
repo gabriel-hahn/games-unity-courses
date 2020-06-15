@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101311561657856}
   - component: {fileID: 4101311561657859}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerHornLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101311702388530}
   - component: {fileID: 4101311702388541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101311987838347}
   - component: {fileID: 4101311987838346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101312070897452}
   - component: {fileID: 4101312070897455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101312730779942}
   - component: {fileID: 4101312730779937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerHornRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101312836694454}
   - component: {fileID: 4101312836694449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101313045533119}
   - component: {fileID: 4101313045533118}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101313387126058}
   - component: {fileID: 4101313387126037}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SummonerHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,9 +671,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4101313624371478}
   - component: {fileID: 4101313624371473}
-  m_Layer: 0
+  - component: {fileID: 7005896937083517417}
+  - component: {fileID: 5300687759387748504}
+  m_Layer: 9
   m_Name: Summoner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,3 +716,50 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &7005896937083517417
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101313624371479}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.33420086, y: 1.2532504}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5065022, y: 5.344605}
+  m_EdgeRadius: 0
+--- !u!50 &5300687759387748504
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101313624371479}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

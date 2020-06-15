@@ -625,6 +625,36 @@ Transform:
   m_Father: {fileID: 539409426}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &942508046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4101313624371479, guid: f16c0262741754eaa964e085d575521a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4101312240530293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &942508047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942508046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411a712808d7846aa975031b332e5bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  damage: 1
+  speed: 20
+  timeBetweenAttacks: 2
+  player: {fileID: 0}
+  minX: -53.1
+  maxX: 53.1
+  minY: -34.1
+  maxY: 31.1
+  timeBetweenSummons: 5
+  summonTime: 0
+  enemyToSummon: {fileID: 125923789, guid: dfef530636b794ce3bb738064148fbeb, type: 3}
 --- !u!1 &963178458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,11 +1503,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4101313624371478, guid: f16c0262741754eaa964e085d575521a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4101313624371478, guid: f16c0262741754eaa964e085d575521a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.94
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 4101313624371478, guid: f16c0262741754eaa964e085d575521a, type: 3}
       propertyPath: m_LocalPosition.z
