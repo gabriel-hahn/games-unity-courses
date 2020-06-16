@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4686810625441550644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,15 +33,14 @@ Transform:
 --- !u!1 &4686810626174189657
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3720736484137239794, guid: 073757e74ca2e4b709fda283b7388b3e,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4686810626174189659}
   - component: {fileID: 4686810626174189656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,14 +50,13 @@ GameObject:
 --- !u!4 &4686810626174189659
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3720736484137239792, guid: 073757e74ca2e4b709fda283b7388b3e,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4686810626174189657}
   m_LocalRotation: {x: -0, y: -0, z: -0.47472975, w: 0.88013166}
   m_LocalPosition: {x: 0.03, y: -0.05, z: 55.22461}
-  m_LocalScale: {x: 1.1548835, y: 1.17, z: 1.17}
+  m_LocalScale: {x: 1.154884, y: 1.17, z: 1.17}
   m_Children:
   - {fileID: 4686810626471499453}
   m_Father: {fileID: 4686810626872154043}
@@ -67,8 +65,7 @@ Transform:
 --- !u!212 &4686810626174189656
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3720736484137239795, guid: 073757e74ca2e4b709fda283b7388b3e,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4686810626174189657}
@@ -126,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4686810626471499453}
   - component: {fileID: 4686810626471499452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +205,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4686810626872154043}
   - component: {fileID: 4686810626872154042}
-  m_Layer: 0
+  - component: {fileID: 1070259102}
+  m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,3 +245,22 @@ MonoBehaviour:
     type: 3}
   shotPoint: {fileID: 4686810625441550644}
   timeBetweenShots: 0.5
+--- !u!95 &1070259102
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4686810626872154040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1301113bd86af44638e875b7d22bf538, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
