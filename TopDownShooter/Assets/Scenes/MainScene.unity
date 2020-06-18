@@ -202,6 +202,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &147435263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147435264}
+  m_Layer: 9
+  m_Name: ShotPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147435264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147435263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1469838557}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177034716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1071,39 @@ Transform:
   m_Father: {fileID: 1664827320}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1469838552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7656135994903694085, guid: 8c21520db4f2d44ceb4de9fe4077c028,
+    type: 3}
+  m_PrefabInstance: {fileID: 7656135995834433501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1469838553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469838552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62163b6c219d41f7a6e84a36ad0dfb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  damage: 0
+  speed: 17
+  timeBetweenAttacks: 4
+  player: {fileID: 0}
+  stopDistance: 10
+  shotPoint: {fileID: 147435264}
+  enemyBullet: {fileID: 8546061910309565836, guid: 22502be4aab8d409c8a01777bcabe3d2,
+    type: 3}
+--- !u!4 &1469838557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7656135994903694084, guid: 8c21520db4f2d44ceb4de9fe4077c028,
+    type: 3}
+  m_PrefabInstance: {fileID: 7656135995834433501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1489671350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,7 +1436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100654425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 6.15, z: 0}
+  m_LocalPosition: {x: -29.27, y: 18.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 674108862}

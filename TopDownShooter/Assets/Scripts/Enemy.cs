@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    public void MoveCurrentEnemyToPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+    }
+
     public void TakeDamage(int damageAmount)
     {
         health -= damageAmount;
