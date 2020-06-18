@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     public void MoveCurrentEnemyToPlayer()
     {
+        print("Moving " + transform.position);
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
 
