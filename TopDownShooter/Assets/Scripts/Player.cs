@@ -37,4 +37,11 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void ChangeWeapon(Weapon weaponToEquip)
+    {
+        GameObject currentWeapon = GameObject.FindGameObjectWithTag("Weapon");
+        Instantiate(weaponToEquip, new Vector2(currentWeapon.transform.position.x, currentWeapon.transform.position.y), currentWeapon.transform.rotation, transform);
+        Destroy(currentWeapon);
+    }
 }

@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     {
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle - 40, Vector3.forward);
+        Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
         transform.rotation = rotation;
     }
@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && Time.time >= shotTime)
         {
-            Instantiate(projectile, shotPoint.position, transform.rotation * projectile.transform.rotation);
+            Instantiate(projectile, new Vector2(shotPoint.position.x, shotPoint.position.y), transform.rotation * projectile.transform.rotation);
             shotTime = Time.time + timeBetweenShots;
         }
     }
