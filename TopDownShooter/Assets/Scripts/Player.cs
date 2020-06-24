@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public float health;
+    public int speed;
+    public int health;
 
     private new Rigidbody2D rigidbody;
     private Vector2 moveAmount;
     private Animator animator;
+
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     private void Start()
     {
@@ -32,6 +37,8 @@ public class Player : MonoBehaviour
     {
         health -= damageAmount;
 
+        UpdateHealthUI(health);
+
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -43,5 +50,13 @@ public class Player : MonoBehaviour
         GameObject currentWeapon = GameObject.FindGameObjectWithTag("Weapon");
         Instantiate(weaponToEquip, new Vector2(currentWeapon.transform.position.x, currentWeapon.transform.position.y), currentWeapon.transform.rotation, transform);
         Destroy(currentWeapon);
+    }
+
+    public void UpdateHealthUI(int currentHealth)
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            hearts[i].sprite = (i < currentHealth) ? fullHeart : emptyHeart;
+        }
     }
 }
