@@ -4,7 +4,7 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public int damage;
-    public int pickupChange;
+    public int pickupChance;
     public float speed;
     public float timeBetweenAttacks;
 
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     {
         int randomNumber = Random.Range(0, 101);
 
-        if (randomNumber < pickupChange)
+        if (randomNumber < pickupChance)
         {
             GameObject randomPickup = pickups[Random.Range(0, pickups.Length)];
             Instantiate(randomPickup, transform.position, transform.rotation);

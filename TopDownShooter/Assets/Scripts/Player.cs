@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    const int MAX_HEALTH = 5;
+
     public int speed;
     public int health;
 
@@ -58,5 +60,13 @@ public class Player : MonoBehaviour
         {
             hearts[i].sprite = (i < currentHealth) ? fullHeart : emptyHeart;
         }
+    }
+
+    public void Heal(int healAmount)
+    {
+        int finalHealth = health + healAmount;
+        health = finalHealth > MAX_HEALTH ? MAX_HEALTH : finalHealth;
+
+        UpdateHealthUI(health);
     }
 }

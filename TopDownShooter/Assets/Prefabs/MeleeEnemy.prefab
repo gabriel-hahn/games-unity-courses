@@ -612,13 +612,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
-  pickupChange: 30
+  pickupChance: 40
   speed: 20
   timeBetweenAttacks: 3
   pickups:
   - {fileID: 3024796069275807170, guid: b3cb2ea6e980c4cd8991b0bcb2a2c4df, type: 3}
   - {fileID: 2632846762217744277, guid: eb10b4332cd8d4e7b8965deb17821ea4, type: 3}
   - {fileID: 6138443637335113799, guid: 05e6e0252df13459cb6f92f479de77e8, type: 3}
+  - {fileID: 4282550991930274531, guid: cf3f644de88d448228d86fb6cbd17f2c, type: 3}
+  - {fileID: 4282550991930274531, guid: cf3f644de88d448228d86fb6cbd17f2c, type: 3}
   player: {fileID: 0}
   stopDistance: 10
   attackSpeed: 6
