@@ -4,8 +4,11 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public int damage;
+    public int pickupChange;
     public float speed;
     public float timeBetweenAttacks;
+
+    public GameObject[] pickups;
 
     [HideInInspector]
     public Transform player;
@@ -26,7 +29,19 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            CheckDropWeapon();
             Destroy(gameObject);
+        }
+    }
+
+    private void CheckDropWeapon()
+    {
+        int randomNumber = Random.Range(0, 101);
+
+        if (randomNumber < pickupChange)
+        {
+            GameObject randomPickup = pickups[Random.Range(0, pickups.Length)];
+            Instantiate(randomPickup, transform.position, transform.rotation);
         }
     }
 }

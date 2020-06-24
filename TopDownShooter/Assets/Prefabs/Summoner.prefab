@@ -778,8 +778,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   damage: 1
+  pickupChange: 40
   speed: 20
   timeBetweenAttacks: 2
+  pickups:
+  - {fileID: 3024796069275807170, guid: b3cb2ea6e980c4cd8991b0bcb2a2c4df, type: 3}
+  - {fileID: 2632846762217744277, guid: eb10b4332cd8d4e7b8965deb17821ea4, type: 3}
+  - {fileID: 6138443637335113799, guid: 05e6e0252df13459cb6f92f479de77e8, type: 3}
   player: {fileID: 0}
   minX: -53.1
   maxX: 53.1
