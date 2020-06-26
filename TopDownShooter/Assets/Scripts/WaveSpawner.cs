@@ -11,6 +11,8 @@ public class WaveSpawner : MonoBehaviour
         public float timeBetweenSpawns;
     }
 
+    public GameObject boss;
+    public Transform bossSpawnPoint;
     public Wave[] waves;
     public Transform[] spawnPoints;
     public float timeBetweenWaves;
@@ -45,12 +47,12 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
 
-        FinishGame();
+        SpawnBoss();
     }
 
-    private void FinishGame()
+    private void SpawnBoss()
     {
-        print("GAME FINISHED");
+        Instantiate(boss, bossSpawnPoint.position, bossSpawnPoint.rotation);
     }
 
     IEnumerator StartNextWave(int index)
