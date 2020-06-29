@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private Vector2 moveAmount;
     private Animator animator;
 
+    public Animator hurtAnimator;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         health -= damageAmount;
 
         UpdateHealthUI(health);
+        hurtAnimator.SetTrigger("hurt");
 
         if (health <= 0)
         {
