@@ -6,6 +6,8 @@ public class Boss : MonoBehaviour
     public int damage;
     public Enemy[] enemies;
     public float spawnOffset;
+    public GameObject blood;
+    public GameObject deathEffect;
 
     private int halfHealth;
     private Animator animator;
@@ -22,6 +24,8 @@ public class Boss : MonoBehaviour
 
         if (health <= 0)
         {
+            Instantiate(blood, transform.position, Quaternion.identity);
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 

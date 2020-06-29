@@ -4,6 +4,7 @@ public class EnemyBullet : MonoBehaviour
 {
     private Player playerScript;
     private Vector2 targetPosition;
+    public GameObject bulletEffect;
 
     public float speed;
     public int damage;
@@ -23,6 +24,7 @@ public class EnemyBullet : MonoBehaviour
             return;
         }
 
+        Instantiate(bulletEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

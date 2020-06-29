@@ -621,6 +621,8 @@ MonoBehaviour:
   - {fileID: 6138443637335113799, guid: 05e6e0252df13459cb6f92f479de77e8, type: 3}
   - {fileID: 4282550991930274531, guid: cf3f644de88d448228d86fb6cbd17f2c, type: 3}
   - {fileID: 4282550991930274531, guid: cf3f644de88d448228d86fb6cbd17f2c, type: 3}
+  deathEffect: {fileID: 131989843951144206, guid: fc2ada73c2da04c878ae9a72df59c4eb,
+    type: 3}
   player: {fileID: 0}
   stopDistance: 10
   attackSpeed: 6

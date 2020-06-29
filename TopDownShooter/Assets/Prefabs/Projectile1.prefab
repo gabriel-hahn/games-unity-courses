@@ -98,7 +98,7 @@ MonoBehaviour:
   speed: 40
   lifeTime: 1
   damage: 1
-  explosion: {fileID: 8233828968011440633, guid: 3def588b2c8f34487b1f9576da809d21,
+  explosion: {fileID: 9145943105469431572, guid: 9982d8f6a51914b53a14bb4908f0cfc3,
     type: 3}
 --- !u!61 &-8032299113737908325
 BoxCollider2D:

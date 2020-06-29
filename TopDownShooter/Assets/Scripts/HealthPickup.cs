@@ -3,6 +3,7 @@
 public class HealthPickup : MonoBehaviour
 {
     public int healAmount;
+    public GameObject effect;
     Player playerScript;
 
     private void Start()
@@ -15,6 +16,7 @@ public class HealthPickup : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerScript.Heal(healAmount);
+            Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

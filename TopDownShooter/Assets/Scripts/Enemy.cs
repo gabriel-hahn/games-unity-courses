@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float timeBetweenAttacks;
 
     public GameObject[] pickups;
+    public GameObject deathEffect;
 
     [HideInInspector]
     public Transform player;
@@ -30,6 +31,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             CheckDropWeapon();
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
