@@ -6,10 +6,12 @@ public class Projectile : MonoBehaviour
     public float lifeTime;
     public int damage;
     public GameObject explosion;
+    public GameObject soundObject;
 
     private void Start()
     {
         Invoke("DestroyProjectile", lifeTime);
+        Instantiate(soundObject, transform.position, transform.rotation);
     }
 
     private void Update()
