@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -11,22 +12,29 @@ public class Boss : MonoBehaviour
 
     private int halfHealth;
     private Animator animator;
+    private Slider healthBar;
 
     private void Start()
     {
         halfHealth = health / 2;
         animator = GetComponent<Animator>();
+        healthBar = FindObjectOfType<Slider>();
+
+        healthBar.maxValue = health;
+        healthBar.value = health;
     }
 
     public void TakeDamage(int damageAmount)
     {
         health -= damageAmount;
+        healthBar.value = health;
 
         if (health <= 0)
         {
             Instantiate(blood, transform.position, Quaternion.identity);
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            healthBar.gameObject.SetActive(false);
         }
 
         if (health < halfHealth)

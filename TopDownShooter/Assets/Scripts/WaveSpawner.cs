@@ -12,6 +12,7 @@ public class WaveSpawner : MonoBehaviour
     }
 
     public GameObject boss;
+    public GameObject healthBar;
     public Transform bossSpawnPoint;
     public Wave[] waves;
     public Transform[] spawnPoints;
@@ -53,6 +54,7 @@ public class WaveSpawner : MonoBehaviour
     private void SpawnBoss()
     {
         Instantiate(boss, bossSpawnPoint.position, bossSpawnPoint.rotation);
+        healthBar.SetActive(true);
     }
 
     IEnumerator StartNextWave(int index)
