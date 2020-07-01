@@ -4,6 +4,12 @@ Repository with all games developed during courses and using Unity as game engin
 
 ## Top Down Shooter - Unity Version: 2019.3.15f1
 
+2D game with scene transitions, several weapons and enemies, cool particle effects and state transitions. Developed during Blackthornprod course.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/JqETaTiLAcJw8iQwHj/giphy.gif">
+</p>
+
 ## Aircraft Boost - Unity Version: 2019.3.15f1
 
 In this game, you must cross the landscape and not touch the obstacles, trying to reach the landing platform. The art was created inside Unity, using particles, lights and more.
