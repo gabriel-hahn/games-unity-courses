@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private new Rigidbody2D rigidbody;
     private Vector2 moveAmount;
     private Animator animator;
+    private SceneTransitions sceneTransitions;
 
     public Animator hurtAnimator;
     public Image[] hearts;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
+        sceneTransitions = FindObjectOfType<SceneTransitions>();
     }
 
     private void Update()
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
+            sceneTransitions.LoadScene("Lose");
             Destroy(gameObject);
         }
     }
