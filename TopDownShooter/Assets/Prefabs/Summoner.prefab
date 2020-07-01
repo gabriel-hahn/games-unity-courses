@@ -778,7 +778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   damage: 1
-  pickupChance: 30
+  pickupChance: 20
   speed: 20
   timeBetweenAttacks: 2
   pickups:

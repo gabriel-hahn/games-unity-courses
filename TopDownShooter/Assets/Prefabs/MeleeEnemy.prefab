@@ -612,7 +612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
-  pickupChance: 40
+  pickupChance: 10
   speed: 20
   timeBetweenAttacks: 3
   pickups:
